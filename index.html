@@ -66,7 +66,7 @@
                 <div id="selec_alum" class="ui-field-contain">
                     <select name="selectalumno" id="selectalumno" title="Seleccionar alumno">
                         <option class="primer" value="-1">Alumno:</option>
-                        <option value="1">Jonny Deep</option>
+                        <option value="1">Jonny Deep</option><img src="../../Desktop/will-smith-2011-a-p.jpg" alt="will-smith-2011-a-p" width="349" height="466">
                         <option value="2">Will Smith</option>
                         <option value="3">Taylor Swift</option>
                         <option value="4">Verónica Roth</option>
@@ -81,7 +81,7 @@
     </div>
     <!-- /page two -->
 
-    <!-- Start of three page: #calificacion -->
+    <!--#Aspectos evaluables -->
 
     <div data-theme="a" id="calificacion" data-role="page" data-url="calificacion">
         <div data-role="header" role="banner" class="ui-header ui-bar-a" data-add-back-btn="true" data-back-btn-text="SELECCIÓN">
@@ -192,7 +192,7 @@
 					<fieldset data-role="controlgroup" data-type="horizontal" >
 						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
 						    <legend>Expresión:</legend>	    
-					        <option value="entonacion" selected="">Entonación</option>
+					        <option value="entonacion">Entonación</option>
 					        <option value="volumen">Volumen</option>
 					        <option value="velocidad">Velocidad</option>
 					        <option value="pausas">Pausas</option>
@@ -200,8 +200,8 @@
 						</select>
 					</fieldset>
 					
-					<fieldset data-role="controlgroup" data-type="horizontal" >
-						
+					
+					<fieldset data-role="controlgroup" data-type="horizontal" >	
 					<legend>Duracion:</legend>
 					<select name="Duracion" id="Duracion" data-role="slider">
 					    <option value="si">Si</option>
@@ -210,9 +210,8 @@
 					</fieldset>
 					
 					<fieldset data-role="controlgroup" data-type="horizontal" >
-						 <legend>Lenguaje utilizado:</legend>
-						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
-						   	    
+						<legend>Lenguaje utilizado:</legend>
+						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
 					        <option value="sonrisa">Mirada</option>
 					        <option value="sonrisa">Sonrisa</option>
 					        <option value="posición">Posición del cuerpo</option>
@@ -239,35 +238,64 @@
             
                
               
-        </div>
-                <a data-role="button" href="#notafinal" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">NOTA FINAL</a>
+					</div>
+                <a data-role="button" href="#notafinal" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">EVALUAR</a>
         <!-- /content -->
+
+ </div>
+			<div data-theme="a" id="notafinal" data-role="page" data-url="notafinal">
+				<ul data-role="listview" data-inset="false">
+				    <li>
+				    <img src="images/jonny.jpg">
+				    <h2>Jonny Deep</h2>
+						<ul data-role="listview" data-inset="false">
+							<li>Contenido Proyecto: <b>8</b></li>
+							<li>Calidad Presentacióon:  <b>9</b></li>
+							<li>Expresión oral:  <b>9</b></li>
+							<li>Nota final:  <b>9</b></li>
+						</ul>				    
+					</li>
+					
+				    <li>
+				    <img src="images/veronica.jpg">
+				    <h2>Veronica Roth</h2>
+					    <ul data-role="listview" data-inset="false">
+					        <li>Contenido Proyecto: <b>8</b></li>
+					        <li>Calidad Presentacióon:  <b>7</b></li>
+					        <li>Expresión oral:  <b>7</b></li>
+							<li>Nota final:  <b>7</b></li>
+					    </ul>
+				    </li>
+				
+				    <li>
+				    <img src="images/will.jpg">
+				    <h2>Will Smith</h2>
+					    <ul data-role="listview" data-inset="false">
+					        <li>Contenido Proyecto: <b>9</b></li>
+					        <li>Calidad Presentacióon:  <b>9</b></li>
+					        <li>Expresión oral:  <b>10</b></li>
+							<li>Nota final:  <b>9</b></li>
+					    </ul>
+				    </li>
+				
+					<li>
+				    <img src="images/taylor.jpg">
+				    <h2>Taylor Swift</h2>
+					    <ul data-role="listview" data-inset="false">
+					        <li>Contenido Proyecto: <b>7</b></li>
+					        <li>Calidad Presentacióon:  <b>7</b></li>
+					        <li>Expresión oral:  <b>7</b></li>
+							<li>Nota final:  <b>7</b></li>
+					    </ul>
+				    </li>
+				</ul>
+			</div>
+			
+ 			</div>
 
         
-    </div>
+   
     <!-- /page three -->
-
-
-
-    <!-- Start of third page: #popup -->
-    <div id="popup" data-role="page" data-url="popup">
-
-        <div data-theme="b" data-role="header">
-            <h1>Dialog</h1>
-        </div>
-        <!-- /header -->
-
-        <div class="ui-content" role="main">
-            <h2>Popup</h2>
-            <p>I have an id of "popup" on my page container and only look like a dialog because the link to me had a <code>data-rel="dialog"</code> attribute which gives me this inset look and a <code>data-transition="pop"</code> attribute to change the transition to pop. Without this, I'd be styled as a normal page.</p>
-            <p><a class="ui-btn ui-shadow ui-corner-all ui-btn-inline ui-icon-back ui-btn-icon-left" data-rel="back" href="#one">Back to page "one"</a>
-            </p>
-        </div>
-        <!-- /content -->
-
-     
-    </div>
-    <!-- /page popup -->
 
 
 
