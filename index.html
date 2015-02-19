@@ -5,6 +5,7 @@
     <title>Practica jquery-mobile</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
 	<link rel="stylesheet" href="styles/jquery-mobile-theme-030704-0/themes/Tema_A.css" />
 	<link rel="stylesheet" href="styles/jquery-mobile-theme-030704-0/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
@@ -44,13 +45,7 @@
             <h1 class="ui-title" role="heading" aria-level="1">Titulo</h1>
         </div>
         <!-- /header -->
-        <div data-role="navbar" data-iconpos="left" class="ui-navbar" role="navigation">
-            <ul class="ui-grid-a">
-                <li class="ui-block-b"><a href="#seleccion" class="ui-btn-active ui-state-persist ui-link ui-btn ui-btn-icon-top ui-icon-bars" title="Seleccionar módulo y alumno">SELECCIÓN</a>
-                </li>
-            </ul>
-        </div>
-        <!-- /navbar -->
+ 
 
         <div id="selecciona" class="ui-content" role="main">
             <form>
@@ -91,107 +86,107 @@
 	    
 	                
 	                <h2>CONTENIDO (65%)</h2>
-	                <label for="slider">Planteamiento:</label>
+	                <label for="slider"><b>Planteamiento:</b></label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
-	                <label for="slider">Contenido:</label>
+	                <label for="slider"><b>Contenido:</b></label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
-	                <label for="slider">Resultado:</label>
+	                <label for="slider"><b>Resultado:</b></label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
 					<h2>CALIDAD DE PRESENTACION (10%)</h2>
-					<label for="slider">Presentación escrita:</label>
+					<label for="slider"><b>Presentación escrita:</b></label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
-	                <label for="slider">Redacción y claridad:</label>
+	                <label for="slider"><b>Redacción y claridad:</b></label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
-	                <label for="slider">Organización:</label>
+	                <label for="slider"><b>Organización:</label>
 					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
 					
 					<fieldset data-role="controlgroup" data-type="horizontal">
 						
-					<h2>EXPRESION ORAL (10%)</h2>
-					<fieldset data-role="controlgroup" data-type="horizontal" >	
-				    <legend>Entrada del alumno</legend>
-				        <input type="radio" name="radio" id="radio-choice-c" value="list" checked="checked">
-				        <label for="mal">Mal</label>
-				        <input type="radio" name="bien" id="radio-choice-d" value="grid">
-				        <label for="bien">Bien</label>
-				        <input type="radio" name="excelente" id="radio-choice-e" value="gallery">
-				        <label for="excelente">Excelente</label>
+					<h2>EXPRESION ORAL (25%)</h2>
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">	
+				    <legend><b>Entrada del alumno</b></legend>
+				        <input type="radio" name="radio0" id="radio0a" >
+				        <label for="radio0a">Mal</label>
+				        <input type="radio" name="radio0" id="radio0b" checked="checked">
+				        <label for="radio0b">Bien</label>
+				        <input type="radio" name="radio0" id="radio0c" >
+				        <label for="radio0c">Excelente</label>
 					</fieldset>
 					
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
 						
-				    <legend>Indumentaria:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
+				    <legend><b>Indumentaria:</b></legend>
+				        <input type="radio" name="radio1" id="radio1a" >
+				        <label for="radio1a">Mal</label>
+				        <input type="radio" name="radio1" id="radio1b" checked="checked">
+				        <label for="radio1b">Bien</label>
+				        <input type="radio" name="radio1" id="radio1c" >
+				        <label for="radio1c">Excelente</label>
 					</fieldset>
-				
+				<br>
 					
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-				    <legend>Introducción:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
+				    <legend><b>Introducción:</b></legend>
+				        <input type="radio" name="radio2" id="radio2a" >
+				        <label for="radio2a">Mal</label>
+				        <input type="radio" name="radio2" id="radio2b" checked="checked">
+				        <label for="radio2b">Bien</label>
+				        <input type="radio" name="radio2" id="radio2c" >
+				        <label for="radio2c">Excelente</label>
 					</fieldset>
-					
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-						
-				    <legend>Desarrollo:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
-					</fieldset>
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
 						
-				    <legend>Conclusión:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
+				    <legend><b>Desarrollo:</b></legend>
+				        <input type="radio" name="radio3" id="radio3a" >
+				        <label for="radio3a">Mal</label>
+				        <input type="radio" name="radio3" id="radio3b" checked="checked">
+				        <label for="radio3b">Bien</label>
+				        <input type="radio" name="radio3" id="radio3c" >
+				        <label for="radio3c">Excelente</label>
 					</fieldset>
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
 						
-				    <legend>Seguridad:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
+				    <legend><b>Conclusión:</b></legend>
+				         <input type="radio" name="radio4" id="radio4a" >
+				        <label for="radio4a">Mal</label>
+				        <input type="radio" name="radio4" id="radio4b" checked="checked">
+				        <label for="radio4b">Bien</label>
+				        <input type="radio" name="radio4" id="radio4c" >
+				        <label for="radio4c">Excelente</label>
 					</fieldset>
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-				    <legend>Entusiasmo:</legend>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="list" checked="checked">
-				        <label for="radio-choice-c">Mal</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="grid">
-				        <label for="radio-choice-d">Bien</label>
-				        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="gallery">
-				        <label for="radio-choice-e">Excelente</label>
+						
+				    <legend><b>Seguridad:</b></legend>
+				         <input type="radio" name="radio5" id="radio5a" >
+				        <label for="radio5a">Mal</label>
+				        <input type="radio" name="radio5" id="radio5b" checked="checked">
+				        <label for="radio5b">Bien</label>
+				        <input type="radio" name="radio5" id="radio5c" >
+				        <label for="radio5c">Excelente</label>
 					</fieldset>
-				
+					<br>
+					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+				    <legend><b>Entusiasmo:</b></legend>
+				  <input type="radio" name="radio6" id="radio6a" >
+				        <label for="radio6a">Mal</label>
+				        <input type="radio" name="radio6" id="radio6b" checked="checked">
+				        <label for="radio6b">Bien</label>
+				        <input type="radio" name="radio6" id="radio6c" >
+				        <label for="radio6c">Excelente</label>
+					</fieldset>
+				<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" >
-						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">
-						    <legend>Expresión:</legend>	    
+					<legend><b>Expresión:</b></legend>	
+						<select name="expresion" id="expresion" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
 					        <option value="entonacion">Entonación</option>
 					        <option value="volumen">Volumen</option>
 					        <option value="velocidad">Velocidad</option>
@@ -200,37 +195,37 @@
 						</select>
 					</fieldset>
 					
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" >	
-					<legend>Duracion:</legend>
+					<legend><b>Duracion:</b></legend>
 					<select name="Duracion" id="Duracion" data-role="slider">
 					    <option value="si">Si</option>
 					    <option value="no">No</option>
 					</select>
 					</fieldset>
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" >
-						<legend>Lenguaje utilizado:</legend>
+						<legend><b>Lenguaje utilizado:</b></legend>
 						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
-					        <option value="sonrisa">Mirada</option>
+					        <option value="mirada">Mirada</option>
 					        <option value="sonrisa">Sonrisa</option>
 					        <option value="posición">Posición del cuerpo</option>
 					        <option value="pausas">Tics, gestos nerviosos</option>	
 						</select>
 					</fieldset>
-					
+					<br>
 					<fieldset data-role="controlgroup" data-type="horizontal" >
 						
-					<legend>Atención:</legend>
-					<select name="Duracion" id="Duracion" data-role="slider">
+					<legend><b>Atención:</b></legend>
+					<select name="atencion"  data-role="slider">
 					    <option value="si">Si</option>
 					    <option value="no">No</option>
 					</select>
 					</fieldset>
 					
 	                <fieldset data-role="controlgroup" data-type="horizontal" >	
-					<legend>Preguntas:</legend>
-					<select name="Duracion" id="Duracion" data-role="slider">
+					<legend><b>Preguntas:</b></legend>
+					<select name="preguntas"  data-role="slider">
 					    <option value="si">Si</option>
 					    <option value="no">No</option>
 					</select>
