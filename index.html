@@ -6,41 +6,34 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-	<link rel="stylesheet" href="styles/jquery-mobile-theme-030704-0/themes/Tema_A.css" />
-	<link rel="stylesheet" href="styles/jquery-mobile-theme-030704-0/themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="styles/cool_theme/themes/Cool_theme.css" />
+	<link rel="stylesheet" href="styles/cool_theme/themes/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
-
     <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 </head>
 
 <body class="ui-mobile-viewport ui-overlay-a">
-
     <!--Login -->
-    <div id="login" data-role="page" data-url="login" tabindex="0" class="ui-page ui-page-active" >
-
+    <div  data-theme="d" id="login" data-role="page" data-url="login" tabindex="0" class="ui-page ui-page-active" >
         <div data-role="header" role="banner" class="ui-header ui-bar-a">
-            <h1 class="ui-title" role="heading" aria-level="1" title=">Bienvenido a CalificApp">Evaluación</h1>
+            <h1 class="ui-title" role="heading" aria-level="1" title="Evalucaion Proyecto">Evaluación</h1>
         </div>
-
-
         <form class="ui-content" role="main">
             <div class="ui-field-contain">
                 <label for="usuario">Usuario</label>
-                <input type="text" data-clear-btn="true" name="usuario" id="usuario" placeholder="Introduce nombre de usuario" value="" title="Introduce nombre de usuario">
+                <input type="text" data-clear-btn="true" name="usuario" id="usuario" value="" title="Introduce nombre de usuario">
                 <label for="pass">Contraseña</label>
                 <input type="password" data-clear-btn="true" autocomplete="off" name="pass" id="pass" value="" title="Contraseña">
             </div>
             <a data-role="button" href="#seleccion" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">ENTRAR</a>
         </form>
         <!-- /content -->
-
-      
     </div>
     <!-- /pagina 1 -->
 
     <!-- Comienzo pagina 2: #seleccion -->
-    <div data-theme="a" id="seleccion" data-role="page" data-url="seleccion">
+    <div data-theme="d" id="seleccion" data-role="page" data-url="seleccion">
         <div data-role="header" role="banner" class="ui-header ui-bar-a">
             <h1 class="ui-title" role="heading" aria-level="1">Titulo</h1>
         </div>
@@ -71,233 +64,251 @@
         </div>
         <a data-role="button" href="#calificacion" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">COMENZAR</a>
         <!-- /content -->
-
-       
     </div>
     <!-- /page two -->
 
     <!--#Aspectos evaluables -->
 
-    <div data-theme="a" id="calificacion" data-role="page" data-url="calificacion">
+    <div data-theme="d" id="calificacion" data-role="page" data-url="calificacion">
         <div data-role="header" role="banner" class="ui-header ui-bar-a" data-add-back-btn="true" data-back-btn-text="SELECCIÓN">
-            <h1 class="ui-title" role="heading" aria-level="1">Titulo</h1>
+            <h1 class="ui-title" role="heading" aria-level="1">Alumno y curso</h1>
         </div>
-                <div class="ui-field-contain">
-	    
-	                
-	                <h2>CONTENIDO (65%)</h2>
-	                <label for="slider"><b>Planteamiento:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-	                <label for="slider"><b>Contenido:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-	                <label for="slider"><b>Resultado:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-					<h2>CALIDAD DE PRESENTACION (10%)</h2>
-					<label for="slider"><b>Presentación escrita:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-	                <label for="slider"><b>Redacción y claridad:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-	                <label for="slider"><b>Organización:</b></label>
-					<input type="range" name="slider" id="slider" value="5" min="0" max="10">
-					
-					<fieldset data-role="controlgroup" data-type="horizontal">
-						
-					<h2>EXPRESION ORAL (25%)</h2>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">	
-				    <legend><b>Entrada del alumno</b></legend>
-				        <input type="radio" name="radio0" id="radio0a" >
-				        <label for="radio0a">Mal</label>
-				        <input type="radio" name="radio0" id="radio0b" checked="checked">
-				        <label for="radio0b">Bien</label>
-				        <input type="radio" name="radio0" id="radio0c" >
-				        <label for="radio0c">Excelente</label>
-					</fieldset>
-					
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-						
-				    <legend><b>Indumentaria:</b></legend>
-				        <input type="radio" name="radio1" id="radio1a" >
-				        <label for="radio1a">Mal</label>
-				        <input type="radio" name="radio1" id="radio1b" checked="checked">
-				        <label for="radio1b">Bien</label>
-				        <input type="radio" name="radio1" id="radio1c" >
-				        <label for="radio1c">Excelente</label>
-					</fieldset>
-				<br>
-					
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-				    <legend><b>Introducción:</b></legend>
-				        <input type="radio" name="radio2" id="radio2a" >
-				        <label for="radio2a">Mal</label>
-				        <input type="radio" name="radio2" id="radio2b" checked="checked">
-				        <label for="radio2b">Bien</label>
-				        <input type="radio" name="radio2" id="radio2c" >
-				        <label for="radio2c">Excelente</label>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-						
-				    <legend><b>Desarrollo:</b></legend>
-				        <input type="radio" name="radio3" id="radio3a" >
-				        <label for="radio3a">Mal</label>
-				        <input type="radio" name="radio3" id="radio3b" checked="checked">
-				        <label for="radio3b">Bien</label>
-				        <input type="radio" name="radio3" id="radio3c" >
-				        <label for="radio3c">Excelente</label>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-						
-				    <legend><b>Conclusión:</b></legend>
-				         <input type="radio" name="radio4" id="radio4a" >
-				        <label for="radio4a">Mal</label>
-				        <input type="radio" name="radio4" id="radio4b" checked="checked">
-				        <label for="radio4b">Bien</label>
-				        <input type="radio" name="radio4" id="radio4c" >
-				        <label for="radio4c">Excelente</label>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-						
-				    <legend><b>Seguridad:</b></legend>
-				         <input type="radio" name="radio5" id="radio5a" >
-				        <label for="radio5a">Mal</label>
-				        <input type="radio" name="radio5" id="radio5b" checked="checked">
-				        <label for="radio5b">Bien</label>
-				        <input type="radio" name="radio5" id="radio5c" >
-				        <label for="radio5c">Excelente</label>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
-				    <legend><b>Entusiasmo:</b></legend>
-				  <input type="radio" name="radio6" id="radio6a" >
-				        <label for="radio6a">Mal</label>
-				        <input type="radio" name="radio6" id="radio6b" checked="checked">
-				        <label for="radio6b">Bien</label>
-				        <input type="radio" name="radio6" id="radio6c" >
-				        <label for="radio6c">Excelente</label>
-					</fieldset>
-				<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" >
-					<legend><b>Expresión:</b></legend>	
-						<select name="expresion" id="expresion" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
-					        <option value="entonacion">Entonación</option>
-					        <option value="volumen">Volumen</option>
-					        <option value="velocidad">Velocidad</option>
-					        <option value="pausas">Pausas</option>
-					        <option value="muletillas">Utilización de muletillas</option>		
-						</select>
-					</fieldset>
-					
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" >	
-					<legend><b>Duracion:</b></legend>
-					<select name="Duracion" id="Duracion" data-role="slider">
-					    <option value="si">Si</option>
-					    <option value="no">No</option>
-					</select>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" >
-						<legend><b>Lenguaje utilizado:</b></legend>
-						<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
-					        <option value="mirada">Mirada</option>
-					        <option value="sonrisa">Sonrisa</option>
-					        <option value="posición">Posición del cuerpo</option>
-					        <option value="pausas">Tics, gestos nerviosos</option>	
-						</select>
-					</fieldset>
-					<br>
-					<fieldset data-role="controlgroup" data-type="horizontal" >
-						
-					<legend><b>Atención:</b></legend>
-					<select name="atencion"  data-role="slider">
-					    <option value="si">Si</option>
-					    <option value="no">No</option>
-					</select>
-					</fieldset>
-					
-	                <fieldset data-role="controlgroup" data-type="horizontal" >	
-					<legend><b>Preguntas:</b></legend>
-					<select name="preguntas"  data-role="slider">
-					    <option value="si">Si</option>
-					    <option value="no">No</option>
-					</select>
-					</fieldset>
-            </fieldset>
-              
-					</div>
-                <a data-role="button" href="#notafinal" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">EVALUAR</a>
+        <div class="ui-field-contain"> 
+	    <div data-role="navbar" data-iconpos="left">
+		<ul>
+		    <li><a href="#login" data-icon="power" title="Salir">Salir</a>
+		    </li>
+		    <li><a href="#seleccion" data-icon="user" title="Seleccionar alumno">Alumnos</a>
+		    </li>
+		    <li><a href="#notafinal" data-icon="edit" title="Poner nota final">Nota</a>
+		    </li>
+		</ul>
+	    </div>
+	     <a href="#ayuda_val11" data-rel="popup" data-transition="pop" class="ayuda my-tooltip-btn ui-btn ui-alt-icon ui-nodisc-icon ui-btn-inline ui-icon-info ui-btn-icon-notext ui-corner-all" title="Qué valorar en la atención al público"></a>
+		    <div data-role="popup" id="ayuda_val11" class="ui-content" data-theme="d">
+		    <h3>EXPRESIÓN ORAL</h3>
+		    <p><b>Planteamiento</b> <i>Objetivos, Recursos utilizados, Destinatarios, Justificación del proyecto</i></p>
+		    <p><b>Contenido</b> <i>Metodología seguida, Claridad, Actividades o acciones realizadas, Documentación elaborada</i></b></p>
+		<p><b>Resultados obtenidos </b><i>Conclusiones, Objetivos conseguidos y grado de consecución</i></p>
+		  <p><b>Introducción:</b><i> ¿Es atractiva? ¿Queda claro el proyecto?</i></p>
+		  <p><b>Desarrollo: </b><i>Orden en las ideas. Claridad en la exposición. Aclaración de términos técnicos</i></p>
+		  <p><b>Conclusión: </b><i>¿Queda claro el objetivo del proyecto? ¿Lo vende bien?</i></p>
+		  <p><b>Expresión oral: </b><i>Entonación, Volumen, Velocidad, Vacilación en la voz, Pausas, Utilización de muletillas</i></p>
+		  <p><b>Duración: </b><i>¿Se adecua a lo estipulado?</i></p>
+		  <p><b>Lenguaje no verbal: </b><i>Mirada: ¿dirige la mirada a todo el auditorio?, Sonrisa/expresión facial positiva, Posición correcta del cuerpo, Tics, gestos nerviosos</i></p>
+		  <p><b>Atención del público: </b><i> ¿Logra atraer la atención del público?</i></p>
+		  <p><b>Preguntas realizadas: </b><i>¿Responde de forma coherente?</i></p>
+		    </div>
+	    <div class="container-fluid">
+		<div class="row">
+		    <h2>CONTENIDO (65%)</h2>
+		    <label for="slider"><b>Planteamiento:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		    <label for="slider"><b>Contenido:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		    <label for="slider"><b>Resultado:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		</div>
+		<div class="row">
+		    <h2>CALIDAD DE PRESENTACION (10%)</h2>
+		    <label for="slider"><b>Presentación escrita:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		    <label for="slider"><b>Redacción y claridad:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		    <label for="slider"><b>Organización:</b></label>
+		    <input type="range" name="slider" id="slider" value="5" min="0" max="10">
+		</div>
+		<div class="row">
+		<fieldset data-role="controlgroup" data-type="horizontal">
+		    <h2>EXPRESION ORAL (25%)</h2>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">	
+			<legend><b>Entrada del alumno</b></legend>
+			<input type="radio" name="radio0" id="radio0a" >
+			<label for="radio0a">Mal</label>
+			<input type="radio" name="radio0" id="radio0b" checked="checked">
+			<label for="radio0b">Bien</label>
+			<input type="radio" name="radio0" id="radio0c" >
+			<label for="radio0c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Indumentaria:</b></legend>
+			<input type="radio" name="radio1" id="radio1a" >
+			<label for="radio1a">Mal</label>
+			<input type="radio" name="radio1" id="radio1b" checked="checked">
+			<label for="radio1b">Bien</label>
+			<input type="radio" name="radio1" id="radio1c" >
+			<label for="radio1c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Introducción:</b></legend>
+			<input type="radio" name="radio2" id="radio2a" >
+			<label for="radio2a">Mal</label>
+			<input type="radio" name="radio2" id="radio2b" checked="checked">
+			<label for="radio2b">Bien</label>
+			<input type="radio" name="radio2" id="radio2c" >
+			<label for="radio2c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Desarrollo:</b></legend>
+			<input type="radio" name="radio3" id="radio3a" >
+			<label for="radio3a">Mal</label>
+			<input type="radio" name="radio3" id="radio3b" checked="checked">
+			<label for="radio3b">Bien</label>
+			<input type="radio" name="radio3" id="radio3c" >
+			<label for="radio3c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Conclusión:</b></legend>
+			<input type="radio" name="radio4" id="radio4a" >
+			<label for="radio4a">Mal</label>
+			<input type="radio" name="radio4" id="radio4b" checked="checked">
+			<label for="radio4b">Bien</label>
+			<input type="radio" name="radio4" id="radio4c" >
+			<label for="radio4c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Seguridad:</b></legend>
+			<input type="radio" name="radio5" id="radio5a" >
+			<label for="radio5a">Mal</label>
+			<input type="radio" name="radio5" id="radio5b" checked="checked">
+			<label for="radio5b">Bien</label>
+			<input type="radio" name="radio5" id="radio5c" >
+			<label for="radio5c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+			<legend><b>Entusiasmo:</b></legend>
+			<input type="radio" name="radio6" id="radio6a" >
+			<label for="radio6a">Mal</label>
+			<input type="radio" name="radio6" id="radio6b" checked="checked">
+			<label for="radio6b">Bien</label>
+			<input type="radio" name="radio6" id="radio6c" >
+			<label for="radio6c">Excelente</label>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" >
+			<legend><b>Expresión:</b></legend>	
+			<select name="expresion" id="expresion" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
+			<option value="entonacion">Entonación</option>
+			    <option value="volumen">Volumen</option>
+			    <option value="velocidad">Velocidad</option>
+			    <option value="pausas">Pausas</option>
+			    <option value="muletillas">Utilización de muletillas</option>		
+			</select>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" >	
+			<legend><b>Duracion:</b></legend>
+			<select name="Duracion" id="Duracion" data-role="slider">
+			<option value="si">Si</option>
+			<option value="no">No</option>
+			</select>
+		    </fieldset>
+		    <br>
+		    <fieldset  data-role="controlgroup" data-type="horizontal" >
+			<legend><b>Lenguaje utilizado:</b></legend>
+			<select name="select-choice-8" id="select-choice-8" multiple="multiple" data-native-menu="false" data-icon="grid" data-iconpos="left">   
+			    <option value="mirada">Mirada</option>
+			    <option value="sonrisa">Sonrisa</option>
+			    <option value="posición">Posición del cuerpo</option>
+			    <option value="pausas">Tics, gestos nerviosos</option>	
+			</select>
+		    </fieldset>
+		    <br>
+		    <fieldset data-role="controlgroup" data-type="horizontal" >
+			<legend><b>Atención:</b></legend>
+			<select name="atencion"  data-role="slider">
+			    <option value="si">Si</option>
+			    <option value="no">No</option>
+			</select>
+		    </fieldset>
+		    <fieldset data-role="controlgroup" data-type="horizontal" >	
+			<legend><b>Preguntas:</b></legend>
+			<select name="preguntas"  data-role="slider">
+			    <option value="si">Si</option>
+			    <option value="no">No</option>
+			</select>
+		    </fieldset>
+		</fieldset>
+		</div>
+	    </div>
+        </div>
+        <a data-role="button" href="#notafinal" class="ui-link ui-btn ui-shadow ui-corner-all" role="button">EVALUAR</a>
         <!-- /content -->
-
- </div>
-			<div data-theme="a" id="notafinal" data-role="page" data-url="notafinal">
-				<ul data-role="listview" data-inset="false">
-				    <li>
-				    <img src="images/jonny.jpg">
-				    <h2>Jonny Deep</h2>
-						<ul data-role="listview" data-inset="false">
-							<li>Contenido Proyecto: <b>8</b></li>
-							<li>Calidad Presentacióon:  <b>9</b></li>
-							<li>Expresión oral:  <b>9</b></li>
-							<li>Nota final:  <b>9</b></li>
-						</ul>				    
-					</li>
-					
-				    <li>
-				    <img src="images/veronica.jpg">
-				    <h2>Veronica Roth</h2>
-					    <ul data-role="listview" data-inset="false">
-					        <li>Contenido Proyecto: <b>8</b></li>
-					        <li>Calidad Presentacióon:  <b>7</b></li>
-					        <li>Expresión oral:  <b>7</b></li>
-							<li>Nota final:  <b>7</b></li>
-					    </ul>
-				    </li>
-				
-				    <li>
-				    <img src="images/will.jpg">
-				    <h2>Will Smith</h2>
-					    <ul data-role="listview" data-inset="false">
-					        <li>Contenido Proyecto: <b>9</b></li>
-					        <li>Calidad Presentacióon:  <b>9</b></li>
-					        <li>Expresión oral:  <b>10</b></li>
-							<li>Nota final:  <b>9</b></li>
-					    </ul>
-				    </li>
-				
-					<li>
-				    <img src="images/taylor.jpg">
-				    <h2>Taylor Swift</h2>
-					    <ul data-role="listview" data-inset="false">
-					        <li>Contenido Proyecto: <b>7</b></li>
-					        <li>Calidad Presentacióon:  <b>7</b></li>
-					        <li>Expresión oral:  <b>7</b></li>
-							<li>Nota final:  <b>7</b></li>
-					    </ul>
-				    </li>
-				</ul>
-			</div>
-			
- 		
- 			
-
-
-        
-   
-    <!-- /page three -->
-
-
-
-    <div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span>
-        <h1>loading</h1>
     </div>
+    <div data-theme="d" id="notafinal" data-role="page" data-url="notafinal">
+	<div data-role="navbar" data-iconpos="left">
+	    <ul>
+                <li><a href="#login" data-icon="power" title="Salir">Salir</a>
+                </li>
+                <li><a href="#seleccion" data-icon="user" title="Seleccionar alumno">Alumnos</a>
+                </li>
+                <li><a href="#calificacion" data-icon="edit" title="Editar notas">Calificaciones</a>
+                </li>
+            </ul>
+        </div>
+	<ul data-role="listview" data-inset="false">
+	    <li>
+		<img src="images/jonny.jpg">
+		<h2>Jonny Deep</h2>
+		<ul data-role="listview" data-inset="false">
+		    <li>Contenido Proyecto: <b>8</b></li>
+		    <li>Calidad Presentación:  <b>9</b></li>
+		    <li>Expresión oral:  <b>9</b></li>
+		    <li><label for="number-pattern">Nota final: </label>
+<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value=""></li>
+		    
+		</ul>				    
+	    </li>
+	    <li>
+		<img src="images/veronica.jpg">
+		<h2>Veronica Roth</h2>
+		<ul data-role="listview" data-inset="false">
+		    <li>Contenido Proyecto: <b>8</b></li>
+		    <li>Calidad Presentación:  <b>7</b></li>
+		    <li>Expresión oral:  <b>7</b></li>
+		    <li><label for="number-pattern">Nota final: </label>
+<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value=""></li>
+		    
+		</ul>
+	    </li>
+	    <li>
+		<img src="images/will.jpg">
+		<h2>Will Smith</h2>
+		<ul data-role="listview" data-inset="false">
+		    <li>Contenido Proyecto: <b>9</b></li>
+		    <li>Calidad Presentación:  <b>9</b></li>
+		    <li>Expresión oral:  <b>10</b></li>
+		    <li><label for="number-pattern">Nota final: </label>
+<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value=""></li>
+		    
+		</ul>
+	    </li>
+	    <li>
+		<img src="images/taylor.jpg">
+		<h2>Taylor Swift</h2>
+		<ul data-role="listview" data-inset="false">
+		    <li>Contenido Proyecto: <b>7</b></li>
+		    <li>Calidad Presentación:  <b>7</b></li>
+		    <li>Expresión oral:  <b>7</b></li>
+		    <li><label for="number-pattern">Nota final: </label>
+<input type="number" name="number" pattern="[0-9]*" id="number-pattern" value=""></li>
+		    
+		</ul>
+	    </li>
+	</ul>
+    </div>
+    
+ 
+    <!-- /page three -->
+	<div class="ui-loader ui-corner-all ui-body-a ui-loader-default"><span class="ui-icon-loading"></span>
+	    <h1>loading</h1>
+	</div>
 </body>
 
 </html>
